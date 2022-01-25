@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arcano</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>Código Secreto</h1>
+
+	<main>
+		<section>
+			<form>
+				<label>Sólo letras minúsculas, sin acentos</label>
+				<input type="text" placeholder="Ingrese el texto a cifrar">
+				<input type="submit" value="Cifrar">
+				<input type="submit" value="Descifrar">
+			</form>
+		</section>
+
+		<section>
+			<h2>Mensaje encriptado</h2>
+			<input type="text" id="mensaje">
+			<input type="submit" onClick="copiarTexto()" value="Copiar">
+		</section>
+	</main>
+
+	<script src="script.js"></script>
+
+	<footer>
+		<p>Sergio José Parigansky</p>
+	</footer>
+</body>
+
+</html>
