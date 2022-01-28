@@ -6,35 +6,33 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<title>Arcano</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<h1>Código Secreto</h1>
+	<h1 class="titulo">Código Secreto</h1>
 
-	<main>
-		<section>
+	<main class="main">
+		<section class="form box">
 			<form>
-				<label>Sólo letras minúsculas, sin acentos</label>
-				<input type="text" placeholder="Ingrese el texto a cifrar">
-				<input type="submit" value="Cifrar">
-				<input type="submit" value="Descifrar">
+				<label for="mensaje1">Sólo letras minúsculas, sin acentos.</label>
+				<input class="text-input" type="text" name="input-texto" id="mensaje1" placeholder="Ingrese el texto a cifrar">
+				<input class="btn" type="button" id="btn-encriptar" value="Cifrar" onClick="cifrarTexto()">
+				<input class="btn" type="button" id="btn-desencriptar" value="Descifrar" onClick="descifrarTexto()">
 			</form>
 		</section>
-
-		<section>
-			<h2>Mensaje encriptado</h2>
-			<input type="text" id="mensaje">
-			<input type="submit" onClick="copiarTexto()" value="Copiar">
+		<section class="box">
+			<label for="mensaje2">Mensaje encriptado</label>			
+			<input class="text-input" type="text" id="mensaje2">
+			<input class="btn" type="submit" onClick="copiarTexto()" id="btn-copy" value="Copiar">
 		</section>
 	</main>
 
 	<script src="script.js"></script>
 
-	<footer>
-		<p>Sergio José Parigansky</p>
-	</footer>
+	<footer>Sergio José Parigansky</footer>
 </body>
 
 </html>
