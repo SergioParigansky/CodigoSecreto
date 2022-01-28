@@ -1,5 +1,5 @@
 function copiarTexto() {
-	const contenido = document.getElementById("mensaje2");
+	var contenido = document.getElementById("mensaje2");
 	contenido.select();
 	document.execCommand("copy");
 	alert("¡Copiado!");
